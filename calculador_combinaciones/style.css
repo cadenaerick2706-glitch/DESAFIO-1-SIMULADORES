@@ -1,0 +1,100 @@
+:root {
+    --bg: #fdf4ff;
+    --primary: #ffde59;
+    --secondary: #ff3131;
+    --text: #000000;
+    --border: #000000;
+}
+
+body {
+    font-family: 'Arial Black', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    background: var(--primary);
+    display: inline-block;
+    padding: 10px;
+    border: 4px solid var(--border);
+    box-shadow: 8px 8px 0px var(--border);
+    transform: rotate(-2deg);
+}
+
+.card {
+    background: white;
+    border: 4px solid var(--border);
+    padding: 2rem;
+    box-shadow: 12px 12px 0px var(--border);
+    margin-top: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid var(--border);
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: 0.2s;
+}
+
+input:focus {
+    outline: none;
+    background: var(--primary);
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0px var(--border);
+}
+
+button {
+    width: 100%;
+    background: var(--secondary);
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid var(--border);
+    cursor: pointer;
+    box-shadow: 6px 6px 0px var(--border);
+    transition: 0.1s;
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px var(--border);
+}
+
+.result-box {
+    margin-top: 25px;
+    background: #00ff66;
+    padding: 15px;
+    border: 3px solid var(--border);
+    font-size: 1.2rem;
+    text-align: center;
+}
