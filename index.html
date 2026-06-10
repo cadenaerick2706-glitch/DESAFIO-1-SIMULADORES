@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Técnico: Simuladores Interactivos</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            background: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .menu-container {
+            text-align: center;
+            max-width: 600px;
+            padding: 20px;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; color: #38bdf8; }
+        p { color: #94a3b8; margin-bottom: 40px; }
+        .grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 200px;
+        }
+        .btn-calor { background: #111827; color: #00ffcc; border: 1px solid #1e293b; }
+        .btn-comb { background: #120c2b; color: #6366f1; border: 1px solid #2e2358; }
+        .btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Laboratorio de Simuladores</h1>
+        <p>Selecciona uno de los módulos interactivos para iniciar la simulación matemática.</p>
+        <div class="grid">
+            <a href="./simulador_calor/index.html" class="btn btn-calor">🌡️ Módulo Calor</a>
+            <a href="./calculador_combinaciones/index.html" class="btn btn-comb">🎲 Módulo Combinaciones</a>
+        </div>
+    </div>
+</body>
+</html>
